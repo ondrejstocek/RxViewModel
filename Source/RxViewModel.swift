@@ -18,7 +18,7 @@ user-presentable.
 */
 open class RxViewModel: NSObject {
   // MARK: Constants
-  let throttleTime: TimeInterval = 2
+  let throttleTime: DispatchTimeInterval = .seconds(2)
   
   // MARK: Properties
   /// Scope dispose to avoid leaking
